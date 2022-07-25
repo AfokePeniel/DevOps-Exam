@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: devops-project
+  name: project-deployment6
+spec:
+  ports: ~
+  replicas: 3
+  selector:
+    matchLabels:
+      app: devops-project
+  template:
+    metadata:
+      labels:
+        app: devops-project
+    spec:
+      containers:
+        -
+          image: afokepeniel/devops-project:version2.0
+          name: webpages
