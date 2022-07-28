@@ -1,21 +1,22 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: devops-project
-  name: project-deployment6
+    app: devops_exam
+  name: question6
 spec:
   ports: ~
   replicas: 3
   selector:
     matchLabels:
-      app: devops-project
+      app: devops_exam
   template:
     metadata:
       labels:
-        app: devops-project
+        app: devops_exam
     spec:
       containers:
         -
-          image: afokepeniel/devops-project:version2.0
-          name: webpages
+          image: afokepeniel/devops-project:v3
+          name: webpage3

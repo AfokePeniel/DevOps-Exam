@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: devops-projectservice6
+  name: question6
 spec:
   type: NodePort
   ports:
@@ -9,4 +9,5 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    app: devops-project
+    app: devops_exam
+
